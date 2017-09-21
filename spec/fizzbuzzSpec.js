@@ -11,4 +11,7 @@ describe("FizzBuz", function() {
     it("should return Buzz for int 5", function() {
         expect(fizzBuzzTranslator(5)).toBe("Buzz")
     })
+    it("should return FizzBuzz for int 15", function() {
+        expect(fizzBuzzTranslator(15)).toBe("FizzBuzz")
+    })
 })

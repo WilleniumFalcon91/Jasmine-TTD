@@ -1,4 +1,7 @@
 function fizzBuzzTranslator(input) {
+    if(shouldBuzz(input) && shouldFizz(input)) {
+        return "FizzBuzz";
+    }
     if (shouldFizz(input)) {
         return "Fizz";
     }
