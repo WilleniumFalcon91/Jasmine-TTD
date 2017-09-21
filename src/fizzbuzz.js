@@ -1,3 +1,3 @@
-function fizzBuzzTranslator() {
-    return "1";
+function fizzBuzzTranslator(input) {
+    return input.toString();
 }
