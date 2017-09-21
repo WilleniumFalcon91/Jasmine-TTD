@@ -1,17 +1,23 @@
-describe("FizzBuz", function() {
-    it("should return 1 for int 1", function() {
-        expect(fizzBuzzTranslator(1)).toBe("1")
+describe("FizzbuzzPop", function () {
+    it("should return Pop for int 7", function () {
+        expect(fizzBuzzPop(7)).toBe('Pop')
     })
-    it("should return 2 for int 2", function() {
-        expect(fizzBuzzTranslator(2)).toBe("2")
+    it("should return  Buzz for int 5", function () {
+        expect(fizzBuzzPop(5)).toBe('Buzz')
     })
-    it("should return Fizz for int 3", function() {
-        expect(fizzBuzzTranslator(3)).toBe("Fizz")
+    it("should return Fizz for int 3", function () {
+        expect(fizzBuzzPop(3)).toBe('Fizz')
     })
-    it("should return Buzz for int 5", function() {
-        expect(fizzBuzzTranslator(5)).toBe("Buzz")
+    it("should return 4 for int 4", function () {
+        expect(fizzBuzzPop(4)).toBe('4')
     })
-    it("should return FizzBuzz for int 15", function() {
-        expect(fizzBuzzTranslator(15)).toBe("FizzBuzz")
+    it("should return FizzPop for int 21", function () {
+        expect(fizzBuzzPop(21)).toBe('FizzPop')
+    })
+    it("should return BuzzPop for int 35", function () {
+        expect(fizzBuzzPop(35)).toBe('BuzzPop')
+    })
+    it("should return FizzBuzz for int 15", function () {
+        expect(fizzBuzzPop(15)).toBe('FizzBuzz')
     })
 })
