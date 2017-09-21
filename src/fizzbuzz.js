@@ -1,9 +1,16 @@
 function fizzBuzzTranslator(input) {
-    if (input === 3) {
+    if (shouldFizz(input)) {
         return "Fizz";
     }
-    if (input === 5) {
+    if (shouldBuzz(input)) {
         return "Buzz";
     }
     return input.toString();
+}
+
+function shouldFizz(input) {
+    return input % 3 === 0;
+}
+function shouldBuzz(input) {
+    return input % 5 === 0;
 }
